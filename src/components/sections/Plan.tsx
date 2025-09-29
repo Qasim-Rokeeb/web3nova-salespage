@@ -50,11 +50,11 @@ export function Plan() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-b"
+                className="border-b group"
               >
                 <AccordionTrigger className="py-6 text-left hover:no-underline">
                   <div className="flex items-center gap-4">
-                    <div className="relative h-12 w-12">
+                    <div className="relative h-12 w-12 plan-step-icon group-hover:scale-110">
                       <svg
                         className="h-full w-full"
                         width="48"

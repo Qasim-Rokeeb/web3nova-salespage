@@ -97,4 +97,8 @@
   .plan-step-number.is-in-view {
     opacity: 1;
   }
+
+  .plan-step-icon {
+    @apply transition-transform duration-300 ease-out;
+  }
 }
