@@ -1,3 +1,7 @@
+
+'use client';
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
@@ -6,18 +10,30 @@ import { ApplyButton } from '../apply-button';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <section id="hero" className="relative h-[90vh] min-h-[700px] w-full">
+    <section id="hero" className="relative h-[90vh] min-h-[700px] w-full overflow-hidden">
       {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
+        <div
+            className="absolute h-full w-full"
+            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+          >
+          <Image
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            fill
+            className="object-cover"
+            priority
+            data-ai-hint={heroImage.imageHint}
+          />
+        </div>
       )}
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
       <div className="relative z-10 flex h-full items-center justify-center">
