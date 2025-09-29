@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -23,7 +22,7 @@ export function Hero() {
     <section id="hero" className="relative h-[90vh] min-h-[700px] w-full overflow-hidden">
       {heroImage && (
         <div
-            className="absolute h-full w-full"
+            className="absolute h-full w-full parallax-bg"
             style={{ transform: `translateY(${offsetY * 0.5}px)` }}
           >
           <Image
