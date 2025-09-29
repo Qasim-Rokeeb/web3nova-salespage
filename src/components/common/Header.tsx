@@ -14,6 +14,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { ThemeToggle } from '../theme-toggle';
 
 const navLinks = [
   { href: '#problem', label: 'The Problem' },
@@ -73,6 +74,7 @@ export function Header() {
           ))}
         </nav>
         <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle />
           <ApplyButton>Apply Now</ApplyButton>
         </div>
 
@@ -105,9 +107,15 @@ export function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <ApplyButton size="lg" className="mt-4 w-full" onClick={() => setIsMobileMenuOpen(false)}>
-                  Apply Now
-                </ApplyButton>
+                <div className="flex w-full items-center justify-between">
+                    <ApplyButton size="lg" className="mt-4 flex-grow" onClick={() => setIsMobileMenuOpen(false)}>
+                    Apply Now
+                    </ApplyButton>
+                    <div className="mt-4 ml-4">
+                        <ThemeToggle />
+                    </div>
+                </div>
+
               </nav>
             </div>
           </SheetContent>
