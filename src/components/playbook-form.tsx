@@ -27,7 +27,11 @@ const formSchema = z.object({
   }),
 });
 
-export function PlaybookForm() {
+type PlaybookFormProps = {
+    onSubmitted?: () => void;
+}
+
+export function PlaybookForm({ onSubmitted }: PlaybookFormProps) {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
 
@@ -61,10 +65,15 @@ export function PlaybookForm() {
     
     console.log(values);
     
-    toast({
-      title: 'Success!',
-      description: "Your free playbook is on its way to your inbox.",
-    });
+    if (onSubmitted) {
+        onSubmitted();
+    } else {
+        toast({
+            title: 'Success!',
+            description: "Your free playbook is on its way to your inbox.",
+        });
+    }
+
     form.reset();
     setIsSubmitting(false);
   }

@@ -10,6 +10,7 @@ import { SocialProof } from '@/components/sections/SocialProof';
 import { Pricing } from '@/components/sections/Pricing';
 import { Cta } from '@/components/sections/Cta';
 import { BackToTopButton } from '@/components/back-to-top-button';
+import { ExitIntentModal } from '@/components/exit-intent-modal';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       </main>
       <Footer />
       <BackToTopButton />
+      <ExitIntentModal />
     </div>
   );
 }
