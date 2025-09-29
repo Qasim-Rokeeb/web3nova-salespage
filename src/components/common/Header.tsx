@@ -15,6 +15,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { ThemeToggle } from '../theme-toggle';
+import { useActiveSection } from '@/hooks/use-active-section';
 
 const navLinks = [
   { href: '#problem', label: 'The Problem' },
@@ -26,6 +27,7 @@ const navLinks = [
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const activeSection = useActiveSection(navLinks.map(l => l.href.substring(1)));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +51,25 @@ export function Header() {
     };
   }, [isMobileMenuOpen]);
 
+  const getLinkClass = (href: string) => {
+    return cn(
+        'relative text-sm font-medium text-muted-foreground transition-colors hover:text-primary',
+        'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-accent after:transition-transform after:duration-300 after:ease-out after:scale-x-0',
+        {
+            'text-primary after:scale-x-100': `#${activeSection}` === href,
+        }
+    )
+  }
+
+  const getMobileLinkClass = (href: string) => {
+    return cn(
+        "text-lg font-medium text-foreground transition-colors hover:text-primary",
+        {
+            'text-primary': `#${activeSection}` === href,
+        }
+    )
+  }
+
   return (
     <header
       className={cn(
@@ -67,7 +88,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className={getLinkClass(link.href)}
             >
               {link.label}
             </Link>
@@ -102,7 +123,7 @@ export function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                    className={getMobileLinkClass(link.href)}
                   >
                     {link.label}
                   </Link>
