@@ -1,6 +1,7 @@
 
 'use client';
 
+import * as React from 'react';
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -13,6 +14,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { useInView } from "@/hooks/use-in-view"
 import { cn } from "@/lib/utils"
+import Autoplay from 'embla-carousel-autoplay';
 
 const testimonials = [
   {
@@ -34,6 +36,10 @@ const testimonials = [
 
 export function Success() {
   const { ref, isInView } = useInView({ once: true, threshold: 0.4 });
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnHover: true })
+  );
+
   return (
     <section id="success" className="py-16 sm:py-24" ref={ref}>
       <div className="container">
@@ -48,6 +54,9 @@ export function Success() {
             align: "start",
             loop: true,
           }}
+          plugins={[plugin.current]}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
           className="mx-auto mt-12 w-full max-w-xs sm:max-w-xl lg:max-w-4xl"
         >
           <CarouselContent>
