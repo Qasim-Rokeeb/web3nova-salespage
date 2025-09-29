@@ -23,15 +23,15 @@ export function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            <span className="block">Launch Your Career in</span>
-            <span className="text-gradient block">Web3 Development</span>
+            <span className="block">From Web2 Tickets to</span>
+            <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Go from zero to hero with our hands-on, cohort-based program designed to make you a job-ready Web3 developer.
+            Earn your first 200 – 1 000 USDC on Base, Celo, Solana or Lisk—without quitting your day job.
           </p>
           <div className="mt-8">
             <ApplyButton size="lg">
-              Apply for the Next Cohort
+              Secure My Seat – ₦100 000 →
             </ApplyButton>
           </div>
           <DynamicSeatCounter />

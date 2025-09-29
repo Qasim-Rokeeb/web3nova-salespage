@@ -4,9 +4,13 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Web3Nova - Master Web3 and Launch Your Career',
-  description:
-    'Join our cohort-based program to gain real-world Web3 experience, build your portfolio, and land your dream job in the decentralized economy.',
+  title: 'Web3Nova – Become a Paid Web3 Builder in 90 Days',
+  description: 'Web2 dev? Earn your first 200-1000 USDC on Base, Celo, Solana or Lisk in 90 days. Cohort starts Oct 1—only 100 seats.',
+  openGraph: {
+    title: 'From Web2 to Web3 Income in 90 Days – Web3Nova',
+    description: 'Secure your seat for ₦100 k. Graduate with audited dApp and first bounty paid.',
+    images: ['https://web3nova.xyz/og-image.png'],
+  }
 };
 
 export default function RootLayout({

@@ -9,13 +9,10 @@ export function Problem() {
         <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
                 <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-                    Why is Breaking into Web3 So Hard?
+                    YouTube Tutorials Won’t Pay Your Rent
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                    The Web3 space is exploding, but the learning curve is steep and full of pitfalls. Aspiring developers face a chaotic landscape of fragmented information, a lack of mentorship, and the immense pressure to build a credible portfolio from scratch.
-                </p>
-                <p className="mt-4 text-muted-foreground">
-                    This "tutorial hell" leads to frustration and imposter syndrome, stopping talented individuals from seizing life-changing career opportunities in the decentralized economy.
+                    You’ve copy-pasted Solidity snippets until your eyes hurt. You still can’t deploy on Base without 17 stack-overflow tabs. Meanwhile, hackathons are handing out 10 000 USDC prizes to devs who actually finish.
                 </p>
             </div>
             {problemImage && (

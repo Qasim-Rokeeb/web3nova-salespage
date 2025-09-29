@@ -1,47 +1,61 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check } from 'lucide-react';
-import { ApplyButton } from '../apply-button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
-const includedFeatures = [
-    '10-week intensive program',
-    'Real-world project portfolio',
-    '1-on-1 mentorship sessions',
-    'Lifetime community access',
-    'Career and interview prep',
-    'Certificate of Completion',
-]
+const comparisonData = [
+  {
+    name: 'CS Degree',
+    cost: '₦2 M',
+    duration: '4 yrs',
+    firstPaycheck: '?',
+  },
+  {
+    name: 'Random Bootcamp',
+    cost: '₦800 k',
+    duration: '6 mo',
+    firstPaycheck: 'Maybe',
+  },
+  {
+    name: 'Web3Nova',
+    cost: '₦100 k',
+    duration: '90 days',
+    firstPaycheck: '200 – 1 000 USDC',
+  },
+];
 
 export function Pricing() {
   return (
     <section id="pricing" className="py-16 sm:py-24">
         <div className="container">
-            <div className="mx-auto max-w-lg">
-                <Card className="shadow-2xl shadow-primary/10">
-                    <CardHeader className="text-center">
-                        <CardTitle className="font-headline text-3xl">One Price, Everything Included</CardTitle>
-                        <CardDescription>A single investment for a life-changing career move. No hidden fees, no upsells.</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex flex-col items-center">
-                        <div className="my-6">
-                            <span className="text-5xl font-extrabold">₦100,000</span>
-                            <span className="text-muted-foreground">/cohort</span>
-                        </div>
-                        <ul className="w-full space-y-3">
-                            {includedFeatures.map(feature => (
-                                <li key={feature} className="flex items-center gap-3">
-                                    <Check className="h-5 w-5 text-primary" />
-                                    <span className="text-muted-foreground">{feature}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </CardContent>
-                    <CardFooter>
-                        <ApplyButton size="lg" className="w-full">
-                            Secure Your Spot Now
-                        </ApplyButton>
-                    </CardFooter>
-                </Card>
+            <div className="mx-auto max-w-2xl text-center">
+                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+                    A Computer-Science Degree Costs ₦2 Million and 4 Years
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    Web3Nova is ₦100 k, 90 days, and you get paid before it ends.
+                </p>
             </div>
+            <Card className="mt-12">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead></TableHead>
+                            <TableHead>Cost</TableHead>
+                            <TableHead>Duration</TableHead>
+                            <TableHead>First Paycheck</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {comparisonData.map((item) => (
+                            <TableRow key={item.name} className={item.name === 'Web3Nova' ? 'bg-primary/10 font-bold' : ''}>
+                                <TableCell>{item.name}</TableCell>
+                                <TableCell>{item.cost}</TableCell>
+                                <TableCell>{item.duration}</TableCell>
+                                <TableCell>{item.firstPaycheck}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </Card>
         </div>
     </section>
   )

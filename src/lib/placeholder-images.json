@@ -2,26 +2,26 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Abstract technology background with glowing nodes and connections",
-      "imageUrl": "https://images.unsplash.com/photo-1675334758735-5f989ff8237f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzU5MTA3NDA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract technology"
+      "description": "Split-screen: bored dev closing Jira ticket vs same dev smiling at MetaMask bounty alert +1 000 USDC.",
+      "imageUrl": "https://images.unsplash.com/photo-1593086784152-b060f8109e0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBzY3JlZW58ZW58MHx8fHwxNzU5MTYyOTQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "developer screen"
     },
     {
       "id": "avatar-1",
-      "description": "Portrait of a smiling person for a testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkxMDU0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Portrait of Bernard",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkxMDU0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "avatar-2",
-      "description": "Portrait of a professional-looking person for a testimonial",
+      "description": "Portrait of Erudite",
       "imageUrl": "https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBwZXJzb258ZW58MHx8fHwxNzU5MTIzNTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional person"
     },
     {
       "id": "avatar-3",
-      "description": "Portrait of a happy developer",
-      "imageUrl": "https://images.unsplash.com/photo-1629346268421-0d517c179b85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NTkxNjI2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Portrait of Zainab",
+      "imageUrl": "https://images.unsplash.com/photo-1670851604042-c56a9f5d179f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXBweSUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NTkxNjI2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy developer"
     },
     {
@@ -41,6 +41,42 @@
       "description": "A person celebrating a career achievement",
       "imageUrl": "https://images.unsplash.com/photo-1758874384556-ad48ed1c946c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJlZXIlMjBhY2hpZXZlbWVudHxlbnwwfHx8fDE3NTkxNjI2Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "career achievement"
+    },
+    {
+      "id": "logo-base",
+      "description": "Base logo",
+      "imageUrl": "https://images.unsplash.com/photo-1653499676737-becf2c9562c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxCYXNlJTIwbG9nb3xlbnwwfHx8fDE3NTkxNjI5NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Base logo"
+    },
+    {
+      "id": "logo-sui",
+      "description": "Sui logo",
+      "imageUrl": "https://images.unsplash.com/photo-1679317932564-b3fd1cf1ea92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxTdWklMjBsb2dvfGVufDB8fHx8MTc1OTE2Mjk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Sui logo"
+    },
+    {
+      "id": "logo-kaia",
+      "description": "Kaia logo",
+      "imageUrl": "https://images.unsplash.com/photo-1604773851233-7ef99c08735f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxLYWlhJTIwbG9nb3xlbnwwfHx8fDE3NTkxNjI5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kaia logo"
+    },
+    {
+      "id": "logo-avalanche",
+      "description": "Avalanche logo",
+      "imageUrl": "https://images.unsplash.com/photo-1750795553076-28dd7afc9900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxBdmFsYW5jaGUlMjBsb2dvfGVufDB8fHx8MTc1OTE2Mjk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Avalanche logo"
+    },
+    {
+      "id": "logo-gitcoin",
+      "description": "Gitcoin logo",
+      "imageUrl": "https://images.unsplash.com/photo-1628760584600-6c31148991e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxHaXRjb2luJTIwbG9nb3xlbnwwfHx8fDE3NTkxNjI5NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Gitcoin logo"
+    },
+    {
+      "id": "logo-layer3",
+      "description": "Layer3 logo",
+      "imageUrl": "https://images.unsplash.com/photo-1729830375022-b0248100c501?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxMYXllcjMlMjBsb2dvfGVufDB8fHx8MTc1OTE2Mjk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Layer3 logo"
     }
   ]
 }

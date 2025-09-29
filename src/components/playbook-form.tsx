@@ -84,7 +84,7 @@ export function PlaybookForm() {
         />
         <Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto">
           {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-          Get Playbook
+          Send Me the Playbook
         </Button>
       </form>
     </Form>
