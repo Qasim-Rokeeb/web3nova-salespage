@@ -7,6 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { DynamicSeatCounter } from '@/components/dynamic-seat-counter';
 import { ApplyButton } from '../apply-button';
+import { Typewriter } from '../typewriter';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -43,7 +44,7 @@ export function Hero() {
             <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
           </h1>
           <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
-            Earn your first 200 – 1 000 USDC on Base, Celo, Solana or Lisk—without quitting your day job.
+            <Typewriter text="Earn your first 200 – 1 000 USDC on Base, Celo, Solana or Lisk—without quitting your day job." />
           </p>
           <div className="mt-8">
             <ApplyButton size="lg">
