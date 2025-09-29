@@ -13,22 +13,26 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { useInView } from "@/hooks/use-in-view"
 import { cn } from "@/lib/utils"
+import { CopyButton } from "../copy-button";
 
 const testimonials = [
   {
     name: "@BernardDev",
     avatarId: "avatar-1",
-    quote: "Woke up to +1 250 USDC bounty on Base—still in my pajamas."
+    quote: "Woke up to +1 250 USDC bounty on Base—still in my pajamas.",
+    walletAddress: "0x4a...b3c1"
   },
   {
     name: "@Erudite",
     avatarId: "avatar-2",
-    quote: "Job offer from Graphite Network before graduation."
+    quote: "Job offer from Graphite Network before graduation.",
+    walletAddress: "0x8f...e2d5"
   },
   {
     name: "@Zainab",
     avatarId: "avatar-3",
-    quote: "First 500 USDC grant on Celo paid my rent for 3 months."
+    quote: "First 500 USDC grant on Celo paid my rent for 3 months.",
+    walletAddress: "0x2c...f9a7"
   },
 ]
 
@@ -69,6 +73,10 @@ export function Success() {
                           </Avatar>
                           <div>
                             <p className="font-semibold">{testimonial.name}</p>
+                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                                <span>{testimonial.walletAddress}</span>
+                                <CopyButton valueToCopy={testimonial.walletAddress} />
+                            </div>
                           </div>
                         </div>
                       </CardContent>
