@@ -22,6 +22,7 @@ export function Problem() {
                         alt={problemImage.description}
                         width={600}
                         height={400}
+                        loading="lazy"
                         className="rounded-lg object-cover"
                         data-ai-hint={problemImage.imageHint}
                     />

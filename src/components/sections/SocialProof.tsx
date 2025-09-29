@@ -33,7 +33,7 @@ export function SocialProof() {
               const logo = PlaceHolderImages.find(img => img.id === partner.logoId);
               return (
                 <div key={partner.name} className="flex justify-center">
-                  {logo && <Image src={logo.imageUrl} alt={partner.name} width={120} height={40} className="object-contain" data-ai-hint={logo.imageHint} />}
+                  {logo && <Image src={logo.imageUrl} alt={partner.name} width={120} height={40} className="object-contain" data-ai-hint={logo.imageHint} loading="lazy" />}
                 </div>
             )})}
         </div>
