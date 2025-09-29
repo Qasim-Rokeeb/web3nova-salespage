@@ -78,4 +78,23 @@
   .h2-underline:hover::after {
     @apply w-full;
   }
+
+  .plan-circle {
+    stroke-dasharray: 126;
+    stroke-dashoffset: 126;
+    transition: stroke-dashoffset 1s ease-out;
+  }
+
+  .plan-circle.is-in-view {
+    stroke-dashoffset: 0;
+  }
+
+  .plan-step-number {
+    opacity: 0;
+    transition: opacity 0.5s ease-out 0.8s;
+  }
+
+  .plan-step-number.is-in-view {
+    opacity: 1;
+  }
 }
