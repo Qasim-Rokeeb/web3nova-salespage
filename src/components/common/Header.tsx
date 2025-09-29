@@ -101,9 +101,8 @@ export function Header() {
 
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" aria-label="Open menu">
               <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
@@ -112,9 +111,8 @@ export function Header() {
                 <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
                   <Logo />
                 </Link>
-                 <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                 <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
                     <X className="h-6 w-6" />
-                    <span className="sr-only">Close menu</span>
                 </Button>
               </div>
               <nav className="flex flex-col items-start gap-6">

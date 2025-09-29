@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Twitter, Disc } from 'lucide-react';
 import { Logo } from '@/components/common/Logo';
@@ -10,7 +11,7 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="flex flex-col gap-4">
-            <Link href="/">
+            <Link href="/" aria-label="Back to homepage">
               <Logo />
             </Link>
             <p className="text-sm text-muted-foreground">
