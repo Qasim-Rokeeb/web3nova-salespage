@@ -15,6 +15,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { useInView } from "@/hooks/use-in-view"
 import { cn } from "@/lib/utils"
 import Autoplay from 'embla-carousel-autoplay';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -73,7 +74,7 @@ export function Success() {
                         <p className="italic text-muted-foreground">"{testimonial.quote}"</p>
                         <div className="mt-6 flex items-center gap-4">
                            <Avatar className="testimonial-avatar">
-                            {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} data-ai-hint={avatar.imageHint} loading="lazy" className="object-cover" />}
+                            {avatar && <Image src={avatar.imageUrl} alt={testimonial.name} width={40} height={40} data-ai-hint={avatar.imageHint} loading="lazy" className="object-cover rounded-full" />}
                             <AvatarFallback>{testimonial.name.charAt(1)}</AvatarFallback>
                           </Avatar>
                           <div>
