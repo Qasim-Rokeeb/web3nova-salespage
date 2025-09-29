@@ -11,7 +11,7 @@ export function Problem() {
                 <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     YouTube Tutorials Won’t Pay Your Rent
                 </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-4 text-lg text-muted-foreground max-w-prose">
                     You’ve copy-pasted Solidity snippets until your eyes hurt. You still can’t deploy on Base without 17 stack-overflow tabs. Meanwhile, hackathons are handing out 10 000 USDC prizes to devs who actually finish.
                 </p>
             </div>

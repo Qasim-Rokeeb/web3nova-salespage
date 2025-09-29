@@ -14,7 +14,7 @@ export function Guide() {
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
             Built by Engineers Who’ve Actually Cashed 5-Figure Bounties
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-muted-foreground max-w-prose mx-auto">
             We were stuck debugging legacy jQuery too—until we cracked the on-chain recipe.
           </p>
         </div>

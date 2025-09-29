@@ -30,7 +30,7 @@ export function Pricing() {
                 <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     A Computer-Science Degree Costs ₦2 Million and 4 Years
                 </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-4 text-lg text-muted-foreground max-w-prose mx-auto">
                     Web3Nova is ₦100 k, 90 days, and you get paid before it ends.
                 </p>
             </div>

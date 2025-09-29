@@ -26,7 +26,7 @@ export function Hero() {
             <span className="block">From Web2 Tickets to</span>
             <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
             Earn your first 200 – 1 000 USDC on Base, Celo, Solana or Lisk—without quitting your day job.
           </p>
           <div className="mt-8">
