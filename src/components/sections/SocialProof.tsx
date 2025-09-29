@@ -1,41 +1,39 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
-
-const partners = [
-    { name: "Base", logoId: "logo-base" },
-    { name: "Sui", logoId: "logo-sui" },
-    { name: "Kaia", logoId: "logo-kaia" },
-    { name: "Avalanche", logoId: "logo-avalanche" },
-    { name: "Gitcoin", logoId: "logo-gitcoin" },
-    { name: "Layer3", logoId: "logo-layer3" },
-]
+const logos = [
+  "logo-base", "logo-sui", "logo-kaia", "logo-avalanche", "logo-gitcoin", "logo-layer3"
+];
 
 export function SocialProof() {
   return (
     <section id="social-proof" className="bg-card py-16 sm:py-24">
       <div className="container">
-        <div className="mx-auto text-center">
-            <h2 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">
-                Trusted by
-            </h2>
-        </div>
-
-        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
-            {partners.map((partner) => {
-              const logo = PlaceHolderImages.find(img => img.id === partner.logoId);
-              return (
-                <div key={partner.name} className="flex justify-center">
-                  {logo && <Image src={logo.imageUrl} alt={partner.name} width={120} height={40} className="object-contain" data-ai-hint={logo.imageHint} loading="lazy" />}
-                </div>
-            )})}
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">
+            OUR GRADS GET HIRED, FUNDED &amp; PAID BY
+          </h2>
+          <div className="mt-8 flow-root">
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-10">
+              {logos.map((logoId) => {
+                const logo = PlaceHolderImages.find(img => img.id === logoId);
+                if (!logo) return null;
+                return (
+                  <div key={logo.id} className="flex-shrink-0">
+                    <Image
+                      src={logo.imageUrl}
+                      alt={logo.description}
+                      width={120}
+                      height={48}
+                      className="object-contain filter grayscale transition duration-300 hover:grayscale-0"
+                      data-ai-hint={logo.imageHint}
+                      loading="lazy"
+                    />
+                  </div>
+                )
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
