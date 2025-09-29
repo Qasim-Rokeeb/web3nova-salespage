@@ -9,6 +9,7 @@ import { Success } from '@/components/sections/Success';
 import { SocialProof } from '@/components/sections/SocialProof';
 import { Pricing } from '@/components/sections/Pricing';
 import { Cta } from '@/components/sections/Cta';
+import { BackToTopButton } from '@/components/back-to-top-button';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Cta />
       </main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 }
