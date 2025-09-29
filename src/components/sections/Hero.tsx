@@ -22,7 +22,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container text-center">
-          <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-[56px]">
             <span className="block">From Web2 Tickets to</span>
             <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
           </h1>
