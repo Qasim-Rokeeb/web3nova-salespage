@@ -49,7 +49,7 @@ export function Hero() {
             <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
           </h1>
           <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
-            <Typewriter text="Earn your first 200 – 1 000 USDC on Base, Celo, Solana or Lisk—without quitting your day job." />
+            <Typewriter text="We help Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
           </p>
           <div className="mt-8">
             <ApplyButton size="lg">
