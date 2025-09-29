@@ -55,7 +55,7 @@ export function Header() {
         'sticky top-0 z-50 w-full transition-all duration-300',
         isScrolled
           ? 'border-b border-border/40 bg-background/95 backdrop-blur-sm'
-          : 'bg-background/0'
+          : 'bg-transparent'
       )}
     >
       <div className="container flex h-20 items-center justify-between">
