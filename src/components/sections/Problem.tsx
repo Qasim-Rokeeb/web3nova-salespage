@@ -16,13 +16,13 @@ export function Problem() {
                 </p>
             </div>
             {problemImage && (
-                <div className="rounded-xl shadow-lg">
+                <div className="rounded-lg shadow-lg">
                     <Image
                         src={problemImage.imageUrl}
                         alt={problemImage.description}
                         width={600}
                         height={400}
-                        className="rounded-xl object-cover"
+                        className="rounded-lg object-cover"
                         data-ai-hint={problemImage.imageHint}
                     />
                 </div>
