@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
   title: 'Web3Nova – Become a Paid Web3 Builder in 90 Days',
@@ -19,9 +20,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <head>
+        {heroImage && (
+          <link
+            rel="preload"
+            href={heroImage.imageUrl}
+            as="image"
+          />
+        )}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
