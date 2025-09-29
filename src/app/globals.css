@@ -110,6 +110,15 @@
     animation: slide-in 0.5s ease-out forwards;
   }
 
+  .testimonial-avatar {
+    @apply relative;
+  }
+
+  .dark .testimonial-avatar::after {
+    content: '';
+    @apply absolute inset-0 rounded-full bg-primary/10;
+  }
+
   @keyframes slide-in {
     to {
       opacity: 1;

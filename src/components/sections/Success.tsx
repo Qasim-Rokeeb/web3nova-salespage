@@ -63,7 +63,7 @@ export function Success() {
                       <CardContent className="flex h-full flex-col justify-between p-6">
                         <p className="italic text-muted-foreground">"{testimonial.quote}"</p>
                         <div className="mt-6 flex items-center gap-4">
-                           <Avatar>
+                           <Avatar className="testimonial-avatar">
                             {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} data-ai-hint={avatar.imageHint} loading="lazy" className="object-cover" />}
                             <AvatarFallback>{testimonial.name.charAt(1)}</AvatarFallback>
                           </Avatar>
