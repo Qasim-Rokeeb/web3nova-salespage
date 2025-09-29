@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Web3Nova – Become a Paid Web3 Builder in 90 Days',
@@ -56,6 +57,7 @@ export default function RootLayout({
           {children}
           <Toaster />
         </ThemeProvider>
+        <Script src="https://js.paystack.co/v1/inline.js" />
       </body>
     </html>
   );

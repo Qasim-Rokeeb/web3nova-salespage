@@ -32,6 +32,23 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
+declare global {
+  interface Window {
+    PaystackPop: {
+      setup(options: {
+        key: string;
+        email: string;
+        amount: number;
+        ref: string;
+        onClose: () => void;
+        callback: (response: any) => void;
+      }): {
+        openIframe: () => void;
+      };
+    };
+  }
+}
+
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required'),
   email: z.string().email('Invalid email address'),
@@ -40,6 +57,7 @@ const formSchema = z.object({
     .min(20, 'Please tell us a bit more about your motivation (min. 20 characters).'),
 });
 
+type FormData = z.infer<typeof formSchema>;
 type Step = 'details' | 'payment' | 'success';
 
 export function ApplyModal({
@@ -52,32 +70,72 @@ export function ApplyModal({
   const { toast } = useToast();
   const [step, setStep] = useState<Step>('details');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState<FormData | null>(null);
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: { name: '', email: '', motivation: '' },
   });
 
-  async function onDetailsSubmit(values: z.infer<typeof formSchema>) {
+  async function onDetailsSubmit(values: FormData) {
     console.log('Application Details:', values);
+    setFormData(values);
     setStep('payment');
   }
 
   async function handlePayment() {
+    if (!formData) return;
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setStep('success');
-    setIsSubmitting(false);
-    toast({
-      title: 'Payment Successful!',
-      description: 'Welcome to the cohort! Check your email for next steps.',
+
+    const paystackKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
+    if (!paystackKey) {
+        console.error('Paystack public key not found.');
+        toast({
+            title: 'Payment Error',
+            description: 'Could not initiate payment. Please contact support.',
+            variant: 'destructive'
+        });
+        setIsSubmitting(false);
+        return;
+    }
+
+    const handler = window.PaystackPop.setup({
+      key: paystackKey,
+      email: formData.email,
+      amount: 100000 * 100, // Amount in kobo
+      ref: `W3N-${'' + Math.floor((Math.random() * 1000000000) + 1)}`,
+      onClose: () => {
+        setIsSubmitting(false);
+      },
+      callback: (response) => {
+        console.log('Paystack response:', response);
+        if (response.status === 'success') {
+          setStep('success');
+          toast({
+            title: 'Payment Successful!',
+            description: 'Welcome to the cohort! Check your email for next steps.',
+          });
+        } else {
+          toast({
+            title: 'Payment Failed',
+            description: 'Your payment could not be processed. Please try again.',
+            variant: 'destructive',
+          });
+        }
+        setIsSubmitting(false);
+      },
     });
+
+    handler.openIframe();
   }
 
   const handleModalClose = (open: boolean) => {
     if (!open) {
       form.reset();
-      setTimeout(() => setStep('details'), 300);
+      setTimeout(() => {
+        setStep('details');
+        setFormData(null);
+      }, 300);
     }
     onOpenChange(open);
   }
@@ -192,7 +250,7 @@ export function ApplyModal({
               ) : (
                 <CreditCard className="mr-2 h-5 w-5" />
               )}
-              {isSubmitting ? 'Processing...' : 'Pay Now'}
+              {isSubmitting ? 'Processing...' : 'Pay with Paystack'}
             </Button>
             <Button variant="link" onClick={() => setStep('details')}>Go Back</Button>
           </div>
