@@ -11,7 +11,7 @@ export function Guide() {
     <section id="guide" className="py-16 sm:py-24">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
             Built by Engineers Who’ve Actually Cashed 5-Figure Bounties
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

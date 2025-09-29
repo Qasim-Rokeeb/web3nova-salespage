@@ -65,4 +65,17 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
   }
+
+  .h2-underline {
+    @apply relative inline-block pb-2;
+  }
+
+  .h2-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] w-1/4 bg-gradient-to-r from-primary to-accent transition-all duration-500 ease-out;
+  }
+
+  .h2-underline:hover::after {
+    @apply w-full;
+  }
 }

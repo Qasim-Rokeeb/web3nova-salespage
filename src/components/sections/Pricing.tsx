@@ -27,7 +27,7 @@ export function Pricing() {
     <section id="pricing" className="py-16 sm:py-24">
         <div className="container">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     A Computer-Science Degree Costs ₦2 Million and 4 Years
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">

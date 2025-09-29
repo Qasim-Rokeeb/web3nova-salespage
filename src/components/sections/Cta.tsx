@@ -4,7 +4,7 @@ export function Cta() {
   return (
     <section id="cta" className="bg-card py-16 sm:py-24">
       <div className="container text-center">
-        <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
           Cohort 3 Starts 1 October—Only 100 Seats
         </h2>
         <div className="mt-8">

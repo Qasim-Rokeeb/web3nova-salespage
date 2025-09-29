@@ -8,7 +8,7 @@ export function Problem() {
       <div className="container">
         <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     YouTube Tutorials Won’t Pay Your Rent
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
