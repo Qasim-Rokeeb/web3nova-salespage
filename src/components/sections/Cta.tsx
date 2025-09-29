@@ -1,4 +1,10 @@
 import { ApplyButton } from "../apply-button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 export function Cta() {
   return (
@@ -9,7 +15,20 @@ export function Cta() {
         </h2>
         <div className="mt-8">
             <ApplyButton size="lg">
-                Secure My Seat – ₦100 000 →
+                Secure My Seat –{' '}
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <span className="underline decoration-dashed">
+                        ₦100 000
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>No hidden fees</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                {' '}→
             </ApplyButton>
         </div>
       </div>

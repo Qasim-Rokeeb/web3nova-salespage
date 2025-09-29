@@ -25,6 +25,12 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, CheckCircle, CreditCard } from 'lucide-react';
 import React, { useState } from 'react';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name is required'),
@@ -162,7 +168,18 @@ export function ApplyModal({
             </DialogHeader>
             <div className="rounded-lg bg-background p-6">
               <p className="text-sm text-muted-foreground">Total Amount</p>
-              <p className="font-headline text-4xl font-bold">₦100,000</p>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <p className="font-headline text-4xl font-bold underline decoration-dashed">
+                        ₦100,000
+                      </p>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>No hidden fees</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
             </div>
             <Button
               onClick={handlePayment}

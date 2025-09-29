@@ -7,6 +7,12 @@ import { Button } from '@/components/ui/button';
 import { DynamicSeatCounter } from '@/components/dynamic-seat-counter';
 import { ApplyButton } from '../apply-button';
 import { Typewriter } from '../typewriter';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -47,7 +53,20 @@ export function Hero() {
           </p>
           <div className="mt-8">
             <ApplyButton size="lg">
-              Secure My Seat – ₦100 000 →
+              Secure My Seat –{' '}
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <span className="underline decoration-dashed">
+                      ₦100 000
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>No hidden fees</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              {' '}→
             </ApplyButton>
           </div>
           <DynamicSeatCounter />

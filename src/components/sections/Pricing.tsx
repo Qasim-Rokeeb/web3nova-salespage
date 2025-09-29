@@ -1,5 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const comparisonData = [
   {
@@ -48,7 +54,22 @@ export function Pricing() {
                         {comparisonData.map((item) => (
                             <TableRow key={item.name} className={item.name === 'Web3Nova' ? 'bg-primary/10 font-bold' : ''}>
                                 <TableCell>{item.name}</TableCell>
-                                <TableCell>{item.cost}</TableCell>
+                                <TableCell>
+                                    {item.name === 'Web3Nova' ? (
+                                        <TooltipProvider>
+                                            <Tooltip>
+                                                <TooltipTrigger asChild>
+                                                    <span className="underline decoration-dashed">{item.cost}</span>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>No hidden fees</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    ) : (
+                                        item.cost
+                                    )}
+                                </TableCell>
                                 <TableCell>{item.duration}</TableCell>
                                 <TableCell>{item.firstPaycheck}</TableCell>
                             </TableRow>
