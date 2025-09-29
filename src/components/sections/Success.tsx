@@ -22,16 +22,19 @@ const testimonials = [
     name: "@BernardDev",
     avatarId: "avatar-1",
     quote: "Woke up to +1 250 USDC bounty on Base—still in my pajamas.",
+    alt: "Testimonial from @BernardDev who earned a 1,250 USDC bounty."
   },
   {
     name: "@Erudite",
     avatarId: "avatar-2",
     quote: "Job offer from Graphite Network before graduation.",
+    alt: "Testimonial from @Erudite who received a job offer before graduating."
   },
   {
     name: "@Zainab",
     avatarId: "avatar-3",
     quote: "First 500 USDC grant on Celo paid my rent for 3 months.",
+    alt: "Testimonial from @Zainab who earned a 500 USDC grant."
   },
 ]
 
@@ -74,7 +77,7 @@ export function Success() {
                         <p className="italic text-muted-foreground">"{testimonial.quote}"</p>
                         <div className="mt-6 flex items-center gap-4">
                            <Avatar className="testimonial-avatar">
-                            {avatar && <Image src={avatar.imageUrl} alt={testimonial.name} width={40} height={40} data-ai-hint={avatar.imageHint} loading="lazy" className="object-cover rounded-full" />}
+                            {avatar && <Image src={avatar.imageUrl} alt={testimonial.alt} width={40} height={40} data-ai-hint={avatar.imageHint} loading="lazy" className="object-cover rounded-full" />}
                             <AvatarFallback>{testimonial.name.charAt(1)}</AvatarFallback>
                           </Avatar>
                           <div>
