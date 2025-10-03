@@ -51,7 +51,7 @@ export function Hero() {
           <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
             <Typewriter text="We help Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col items-center gap-4">
             <ApplyButton size="lg">
               Secure My Seat –{' '}
               <TooltipProvider>
@@ -68,6 +68,7 @@ export function Hero() {
               </TooltipProvider>
               {' '}→
             </ApplyButton>
+            <ApplyButton variant="ghost">I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
           </div>
           <DynamicSeatCounter />
         </div>
