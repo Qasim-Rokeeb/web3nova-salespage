@@ -37,7 +37,7 @@ export function Pricing() {
                     A Computer-Science Degree Costs ₦2 Million and 4 Years
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-prose mx-auto">
-                    Web3Nova is ₦100 k, 90 days, and you get paid before it ends.
+                    Web3Nova is ₦100 k, 90 days, and you get paid before it ends <span className="font-bold">(if you put in the work)</span>.
                 </p>
             </div>
             <Card className="mt-12">
