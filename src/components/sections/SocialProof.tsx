@@ -11,7 +11,7 @@ export function SocialProof() {
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">
-            OUR GRADS GET HIRED, FUNDED &amp; PAID BY
+            OUR GRADS HAVE BUILT ON AND GOTTEN PAID BY
           </h2>
           <div className="mt-8 flow-root">
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-10">
