@@ -3,79 +3,79 @@
     {
       "id": "hero-background",
       "description": "Split-screen: bored dev closing Jira ticket vs same dev smiling at MetaMask bounty alert +1 000 USDC.",
-      "imageUrl": "https://images.unsplash.com/photo-1593086784152-b060f8109e0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBzY3JlZW58ZW58MHx8fHwxNzU5MTYyOTQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/hero-background.webp",
       "imageHint": "developer screen"
     },
     {
       "id": "avatar-1",
       "description": "Portrait of Bernard who earned a 1,250 USDC bounty.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkxMDU0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/avatar-1.webp",
       "imageHint": "person portrait"
     },
     {
       "id": "avatar-2",
       "description": "Portrait of Erudite who received a job offer before graduating.",
-      "imageUrl": "https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBwZXJzb258ZW58MHx8fHwxNzU5MTIzNTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/avatar-2.webp",
       "imageHint": "professional person"
     },
     {
       "id": "avatar-3",
       "description": "Portrait of Zainab who earned a 500 USDC grant.",
-      "imageUrl": "https://images.unsplash.com/photo-1670851604042-c56a9f5d179f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXBweSUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NTkxNjI2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/avatar-3.webp",
       "imageHint": "happy developer"
     },
     {
       "id": "avatar-4",
       "description": "Portrait of a person looking at a screen",
-      "imageUrl": "https://images.unsplash.com/photo-1648146511841-30f5b8957629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzY3JlZW58ZW58MHx8fHwxNzU5MTYyNjI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/avatar-4.webp",
       "imageHint": "person screen"
     },
     {
       "id": "problem-illustration",
       "description": "Illustration of a developer looking confused at a complex diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1758685734423-593b9854a31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21wbGV4JTIwZGlhZ3JhbXxlbnwwfHx8fDE3NTkxNjI2Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/problem-illustration.webp",
       "imageHint": "complex diagram"
     },
     {
       "id": "success-illustration",
       "description": "A person celebrating a career achievement",
-      "imageUrl": "https://images.unsplash.com/photo-1758874384556-ad48ed1c946c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJlZXIlMjBhY2hpZXZlbWVudHxlbnwwfHx8fDE3NTkxNjI2Mjd8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "/success-illustration.webp",
       "imageHint": "career achievement"
     },
     {
       "id": "logo-base",
       "description": "Base logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-base.svg",
+      "imageUrl": "/logo-base.svg",
       "imageHint": "Base logo"
     },
     {
       "id": "logo-sui",
       "description": "Sui logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-sui.svg",
+      "imageUrl": "/logo-sui.svg",
       "imageHint": "Sui logo"
     },
     {
       "id": "logo-kaia",
       "description": "Kaia logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-kaia.svg",
+      "imageUrl": "/logo-kaia.svg",
       "imageHint": "Kaia logo"
     },
     {
       "id": "logo-avalanche",
       "description": "Avalanche logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-avalanche.svg",
+      "imageUrl": "/logo-avalanche.svg",
       "imageHint": "Avalanche logo"
     },
     {
       "id": "logo-gitcoin",
       "description": "Gitcoin logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-gitcoin.svg",
+      "imageUrl": "/logo-gitcoin.svg",
       "imageHint": "Gitcoin logo"
     },
     {
       "id": "logo-layer3",
       "description": "Layer3 logo",
-      "imageUrl": "https://storage.googleapis.com/stey-public/web3nova/logo-layer3.svg",
+      "imageUrl": "/logo-layer3.svg",
       "imageHint": "Layer3 logo"
     }
   ]
