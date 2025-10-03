@@ -13,10 +13,10 @@ const stats = [
         label: "in grants & bounties last 12 months"
     },
     {
-        value: 850,
-        prefix: "$",
-        suffix: "",
-        label: "Average bounty size on partner platforms"
+        value: 100,
+        prefix: "",
+        suffix: "%",
+        label: "of our grads earned their first paycheck before graduation"
     },
     {
         value: 3,
