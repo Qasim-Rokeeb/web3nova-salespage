@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -97,7 +98,7 @@ export function Plan() {
                     <span className="text-lg font-semibold">{module.title}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground pl-[80px]">
+                <AccordionContent className="pb-6 text-muted-foreground md:pl-[80px]">
                   {module.content}
                 </AccordionContent>
               </AccordionItem>
