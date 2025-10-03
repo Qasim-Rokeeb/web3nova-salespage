@@ -6,7 +6,7 @@ import { AnimatedCounter } from '@/components/animated-counter';
 
 const stats = [
     {
-        value: 250000000,
+        value: 10000,
         prefix: "$",
         suffix: "+",
         label: "in grants & bounties last 12 months"
