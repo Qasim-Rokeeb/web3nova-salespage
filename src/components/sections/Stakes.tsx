@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,10 +13,10 @@ const stats = [
         label: "in grants & bounties last 12 months"
     },
     {
-        value: 12000,
-        prefix: "",
-        suffix: "+",
-        label: "open issues on Gitcoin, Layer3, Questbook"
+        value: 850,
+        prefix: "$",
+        suffix: "",
+        label: "Average bounty size on partner platforms"
     },
     {
         value: 3,
