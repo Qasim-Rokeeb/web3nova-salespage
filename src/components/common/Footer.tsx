@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         <Separator className="my-8" />
         <div className="flex flex-col items-center justify-center gap-4 text-sm text-muted-foreground md:flex-row">
-          <p className='font-bold'>&copy; 2026 Web3Nova. Turning Web2 skills into on-chain income.</p>
+          <p className='font-bold'>&copy; 2025 Web3Nova. Turning Web2 skills into on-chain income.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:text-primary">Privacy Policy</Link>
             <Link href="#" className="hover:text-primary">Terms of Service</Link>
