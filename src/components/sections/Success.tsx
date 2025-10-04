@@ -19,16 +19,16 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: "@Anu",
-    avatarId: "avatar-1",
-    quote: "Woke up to win $1000 hackathon prize on DreamSpace, thanks to Web3Nova.",
-    alt: "Testimonial from @Anu who won a $1000 hackathon prize."
-  },
-  {
     name: "@Erudite",
     avatarId: "avatar-2",
     quote: "Job offer from Graphite Network before graduation.",
     alt: "Testimonial from @Erudite who received a job offer before graduating."
+  },
+  {
+    name: "@Anu",
+    avatarId: "avatar-1",
+    quote: "Woke up to win $1000 hackathon prize on DreamSpace, thanks to Web3Nova.",
+    alt: "Testimonial from @Anu who won a $1000 hackathon prize."
   },
 ]
 
