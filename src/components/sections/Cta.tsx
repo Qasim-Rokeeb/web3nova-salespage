@@ -14,7 +14,7 @@ export function Cta() {
           Cohort 3 Starts 6 October—Only 100 Seats
         </h2>
         <div className="mt-8 flex flex-col items-center gap-4">
-            <ApplyButton size="lg">
+            <ApplyButton size="lg" href="https://tinyurl.com/CohortII-enrolment">
                 Secure My Seat –{' '}
                 <TooltipProvider>
                   <Tooltip>
@@ -30,7 +30,7 @@ export function Cta() {
                 </TooltipProvider>
                 {' '}→
             </ApplyButton>
-            <ApplyButton variant="ghost">I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
+            <ApplyButton variant="ghost" opensModal={true}>I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ export function Hero() {
             <Typewriter text="We help Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
           </p>
           <div className="mt-8 flex flex-col items-center gap-4">
-            <ApplyButton size="lg">
+            <ApplyButton size="lg" href="https://tinyurl.com/CohortII-enrolment">
               Secure My Seat –{' '}
               <TooltipProvider>
                 <Tooltip>
@@ -61,7 +61,7 @@ export function Hero() {
               </TooltipProvider>
               {' '}→
             </ApplyButton>
-            <ApplyButton variant="ghost">I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
+            <ApplyButton variant="ghost" opensModal={true}>I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
           </div>
           <DynamicSeatCounter />
         </div>

@@ -96,7 +96,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-4 md:flex">
           <ThemeToggle />
-          <ApplyButton>Apply Now</ApplyButton>
+          <ApplyButton href="https://tinyurl.com/CohortII-enrolment">Apply Now</ApplyButton>
         </div>
 
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -127,7 +127,7 @@ export function Header() {
                   </Link>
                 ))}
                 <div className="flex w-full items-center justify-between">
-                    <ApplyButton size="lg" className="mt-4 flex-grow" onClick={() => setIsMobileMenuOpen(false)}>
+                    <ApplyButton size="lg" className="mt-4 flex-grow" onClick={() => setIsMobileMenuOpen(false)} href="https://tinyurl.com/CohortII-enrolment">
                     Apply Now
                     </ApplyButton>
                     <div className="mt-4 ml-4">

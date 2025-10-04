@@ -1,30 +1,35 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ApplyModal } from '@/components/apply-modal';
 
 type ApplyButtonProps = React.ComponentProps<typeof Button> & {
-    onClick?: () => void;
+  onClick?: () => void;
+  href?: string;
+  opensModal?: boolean;
 };
 
-
-export function ApplyButton({ children, onClick, ...props }: ApplyButtonProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export function ApplyButton({ children, onClick, href, opensModal = false, ...props }: ApplyButtonProps) {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const handleClick = () => {
-    setIsModalOpen(true);
-    if(onClick) {
-        onClick();
+    if (href) {
+      window.open(href, '_blank');
+    } else if (opensModal) {
+      setIsModalOpen(true);
     }
-  }
+    if (onClick) {
+      onClick();
+    }
+  };
 
   return (
     <>
       <Button onClick={handleClick} {...props}>
         {children}
       </Button>
-      <ApplyModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />
+      {opensModal && <ApplyModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />}
     </>
   );
 }
