@@ -42,7 +42,7 @@ export function Hero() {
             <span className="block">Web3 Paychecks in 90 Days</span>
           </h1>
           <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
-            <Typewriter text="We help Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
+            <Typewriter text="We help Newbies in web3 and Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
           </p>
           <div className="mt-8 flex flex-col items-center gap-4">
             <ApplyButton size="lg" href="https://tinyurl.com/CohortII-enrolment">
