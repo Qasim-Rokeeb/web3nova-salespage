@@ -19,10 +19,10 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: "@BernardDev",
+    name: "@Anu",
     avatarId: "avatar-1",
-    quote: "Woke up to +1 250 USDC bounty on Base—still in my pajamas.",
-    alt: "Testimonial from @BernardDev who earned a 1,250 USDC bounty."
+    quote: "Woke up to a +$1000 bounty on Base—still in my pajamas.",
+    alt: "Testimonial from @Anu who earned a $1000 bounty."
   },
   {
     name: "@Erudite",
