@@ -39,7 +39,7 @@ export function Hero() {
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-[56px]">
             <span className="block">From Web2 Tickets to</span>
-            <span className="text-gradient block">Web3 Paychecks in 90 Days</span>
+            <span className="block">Web3 Paychecks in 90 Days</span>
           </h1>
           <p className="mx-auto mt-6 max-w-prose text-lg text-muted-foreground md:text-xl">
             <Typewriter text="We help Web2 developers ship their first decentralized app and earn their first paycheck in the new internet economy—without the CS degree, bootcamps, or endless tutorials." />
@@ -61,7 +61,7 @@ export function Hero() {
               </TooltipProvider>
               {' '}→
             </ApplyButton>
-            <ApplyButton variant="ghost" opensModal={true}>I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
+            <ApplyButton variant="ghost" href="https://wa.link/58xt45">I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
           </div>
           <DynamicSeatCounter />
         </div>

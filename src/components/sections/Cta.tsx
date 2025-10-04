@@ -30,7 +30,7 @@ export function Cta() {
                 </TooltipProvider>
                 {' '}→
             </ApplyButton>
-            <ApplyButton variant="ghost" opensModal={true}>I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
+            <ApplyButton variant="ghost" href="https://wa.link/58xt45">I&apos;ll pay in bits, I&apos;ve 50% ready</ApplyButton>
         </div>
       </div>
     </section>
