@@ -30,12 +30,6 @@ const testimonials = [
     quote: "Job offer from Graphite Network before graduation.",
     alt: "Testimonial from @Erudite who received a job offer before graduating."
   },
-  {
-    name: "@Zainab",
-    avatarId: "avatar-3",
-    quote: "First 500 USDC grant on Celo paid my rent for 3 months.",
-    alt: "Testimonial from @Zainab who earned a 500 USDC grant."
-  },
 ]
 
 export function Success() {
