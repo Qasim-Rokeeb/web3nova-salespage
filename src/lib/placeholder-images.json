@@ -8,7 +8,7 @@
     },
     {
       "id": "avatar-1",
-      "description": "Portrait of Bernard who earned a 1,250 USDC bounty.",
+      "description": "Testimonial from @Anu who won a $1000 hackathon prize.",
       "imageUrl": "/avatar-1.webp",
       "imageHint": "person portrait"
     },
@@ -19,28 +19,10 @@
       "imageHint": "professional person"
     },
     {
-      "id": "avatar-3",
-      "description": "Portrait of Zainab who earned a 500 USDC grant.",
-      "imageUrl": "/avatar-3.webp",
-      "imageHint": "happy developer"
-    },
-    {
-      "id": "avatar-4",
-      "description": "Portrait of a person looking at a screen",
-      "imageUrl": "/avatar-4.webp",
-      "imageHint": "person screen"
-    },
-    {
       "id": "problem-illustration",
       "description": "Illustration of a developer looking confused at a complex diagram",
       "imageUrl": "/problem-illustration.webp",
       "imageHint": "complex diagram"
-    },
-    {
-      "id": "success-illustration",
-      "description": "A person celebrating a career achievement",
-      "imageUrl": "/success-illustration.webp",
-      "imageHint": "career achievement"
     },
     {
       "id": "logo-base",
