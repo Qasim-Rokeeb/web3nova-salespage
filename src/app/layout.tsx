@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'From Web2 to Web3 Income in 90 Days – Web3Nova',
     description: 'Secure your seat for ₦100 k. Graduate with audited dApp and first bounty paid.',
-    images: ['https://web3nova.xyz/og-image.png'],
   }
 };
 
