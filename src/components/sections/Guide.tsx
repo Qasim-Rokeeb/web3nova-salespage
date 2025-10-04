@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 const authorityPoints = [
-    '2 cohorts → 100% earners: Bernard ₦10 M in bounties, Erudite hired by Graphite Network',
+    '2 cohorts → 100% earners: Anu $1000 in bounties, Erudite hired by Graphite Network',
     'Training partner: Base, Sui, Kaia, Avalanche',
     'Curriculum audited by ex-ConsenSys & Solana Foundation devs'
 ]
