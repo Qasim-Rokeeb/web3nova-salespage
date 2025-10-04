@@ -61,10 +61,6 @@
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
-  }
-
   .h2-underline {
     @apply relative inline-block pb-2;
   }
