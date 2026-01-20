@@ -9,15 +9,16 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+      },
+    ],
   },
   env: {
     NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY: process.env.PAYSTACK_PUBLIC_KEY,
   },
-  experimental: {
-    // This is required to allow requests from the development environment.
-    allowedDevOrigins: ["*"],
-  }
 };
 
 export default nextConfig;
