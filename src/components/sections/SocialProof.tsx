@@ -33,7 +33,7 @@ export function SocialProof() {
                       alt={logo.description}
                       width={120}
                       height={48}
-                      className="object-contain"
+                      className="object-contain rounded-lg"
                       data-ai-hint={logo.imageHint}
                       loading="lazy"
                     />
