@@ -40,7 +40,7 @@ export function Pricing() {
                     Web3Nova is ₦100 k, 90 days, and you get paid before it ends <span className="font-bold">(if you put in the work)</span>.
                 </p>
             </div>
-            <Card className="mt-12">
+            <Card className="mt-12 card-glow">
                 <Table>
                     <TableHeader>
                         <TableRow>

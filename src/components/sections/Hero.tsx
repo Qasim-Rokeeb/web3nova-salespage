@@ -17,12 +17,25 @@ import {
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => {
+    if (window.scrollY < window.innerHeight) {
+        setOffsetY(window.pageYOffset);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section id="hero" className="relative h-[90vh] min-h-[700px] w-full overflow-hidden">
       {heroImage && (
         <div
-            className="absolute h-full w-full"
+            className="absolute h-full w-full parallax-bg"
+            style={{ transform: `translateY(${offsetY * 0.4}px)` }}
           >
           <Image
             src={heroImage.imageUrl}

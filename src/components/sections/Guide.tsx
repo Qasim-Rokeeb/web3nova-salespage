@@ -19,7 +19,7 @@ export function Guide() {
           </p>
         </div>
 
-        <Card className="mx-auto mt-12 max-w-3xl">
+        <Card className="mx-auto mt-12 max-w-3xl card-glow">
             <CardHeader>
                 <CardTitle>Authority</CardTitle>
             </CardHeader>

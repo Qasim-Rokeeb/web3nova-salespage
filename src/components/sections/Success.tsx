@@ -66,7 +66,7 @@ export function Success() {
                   { 'is-in-view': isInView }
                 )} style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="p-1">
-                    <Card className="h-full">
+                    <Card className="h-full card-glow">
                       <CardContent className="flex h-full flex-col justify-between p-6">
                         <p className="italic text-muted-foreground">"{testimonial.quote}"</p>
                         <div className="mt-6 flex items-center gap-4">

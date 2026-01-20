@@ -40,7 +40,7 @@ export function Stakes() {
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {stats.map((stat, index) => (
-            <Card key={index} className="text-center shadow-lg">
+            <Card key={index} className="text-center shadow-lg card-glow">
                 <CardHeader>
                     <CardTitle className="text-4xl font-extrabold text-primary">
                         {stat.value === 3 ? (
