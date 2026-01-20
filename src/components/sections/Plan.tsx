@@ -32,7 +32,7 @@ const planModules = [
 export function Plan() {
   const { ref, isInView } = useInView({ once: true });
   return (
-    <section id="plan" className="bg-card py-16 sm:py-24" ref={ref}>
+    <section id="plan" className="section-gradient py-16 sm:py-24" ref={ref}>
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">

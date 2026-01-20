@@ -10,7 +10,7 @@ export function SocialProof() {
   const allLogos = [...logos, ...logos]; // Duplicate logos for seamless scroll
 
   return (
-    <section id="social-proof" className="bg-card py-16 sm:py-24">
+    <section id="social-proof" className="section-gradient py-16 sm:py-24">
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">

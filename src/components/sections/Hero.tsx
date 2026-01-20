@@ -47,7 +47,7 @@ export function Hero() {
           />
         </div>
       )}
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/90 backdrop-blur-sm"></div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-[56px]">

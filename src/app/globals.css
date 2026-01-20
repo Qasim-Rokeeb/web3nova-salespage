@@ -112,6 +112,10 @@
   .animate-slide-in-stagger.is-in-view {
     animation: slide-in 0.5s ease-out forwards;
   }
+  
+  .section-gradient {
+    @apply bg-gradient-to-br from-primary/10 via-card to-accent/10;
+  }
 
   @keyframes slide-in {
     to {
