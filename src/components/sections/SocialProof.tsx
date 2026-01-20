@@ -3,7 +3,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
 
 const logos = [
-  "logo-base", "logo-sui", "logo-kaia", "logo-avalanche", "logo-gitcoin", "logo-layer3"
+  "logo-base", "logo-sui", "logo-kaia"
 ];
 
 export function SocialProof() {

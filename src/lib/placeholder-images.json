@@ -7,16 +7,16 @@
       "imageHint": "developer screen"
     },
     {
-      "id": "avatar-1",
-      "description": "Testimonial from @Anu who won a $1000 hackathon prize.",
-      "imageUrl": "/avatar-1.webp",
-      "imageHint": "person portrait"
-    },
-    {
       "id": "avatar-2",
       "description": "Portrait of Erudite who received a job offer before graduating.",
       "imageUrl": "/avatar-2.webp",
       "imageHint": "professional person"
+    },
+    {
+      "id": "avatar-1",
+      "description": "Testimonial from @Anu who won a $1000 hackathon prize.",
+      "imageUrl": "/avatar-1.webp",
+      "imageHint": "person portrait"
     },
     {
       "id": "problem-illustration",
@@ -41,24 +41,6 @@
       "description": "Kaia logo",
       "imageUrl": "/logo-kaia.svg",
       "imageHint": "Kaia logo"
-    },
-    {
-      "id": "logo-avalanche",
-      "description": "Avalanche logo",
-      "imageUrl": "/logo-avalanche.svg",
-      "imageHint": "Avalanche logo"
-    },
-    {
-      "id": "logo-gitcoin",
-      "description": "Gitcoin logo",
-      "imageUrl": "/logo-gitcoin.svg",
-      "imageHint": "Gitcoin logo"
-    },
-    {
-      "id": "logo-layer3",
-      "description": "Layer3 logo",
-      "imageUrl": "/logo-layer3.svg",
-      "imageHint": "Layer3 logo"
     }
   ]
 }
