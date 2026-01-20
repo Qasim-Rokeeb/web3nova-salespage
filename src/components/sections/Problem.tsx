@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export function Problem() {
     const problemImage = PlaceHolderImages.find((img) => img.id === 'problem-illustration');
   return (
-    <section id="problem" className="bg-[#FAFBFC] dark:section-gradient py-16 sm:py-24">
+    <section id="problem" className="py-16 sm:py-24">
       <div className="container">
         <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
