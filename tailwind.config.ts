@@ -17,9 +17,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Manrope', 'sans-serif'],
+        body: ['Roboto Mono', 'monospace'],
         headline: ['Space Grotesk', 'sans-serif'],
-        code: ['monospace'],
+        code: ['Roboto Mono', 'monospace'],
       },
       typography: ({ theme }) => ({
         DEFAULT: {
