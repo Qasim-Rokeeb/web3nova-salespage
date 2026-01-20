@@ -1,9 +1,9 @@
-
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useInView } from '@/hooks/use-in-view';
 import { AnimatedCounter } from '@/components/animated-counter';
+import { cn } from '@/lib/utils';
 
 const stats = [
     {
@@ -27,7 +27,7 @@ const stats = [
 ];
 
 export function Stakes() {
-  const { ref, isInView } = useInView();
+  const { ref, isInView } = useInView({ once: true, threshold: 0.2 });
 
   return (
     <section id="stakes" className="py-16 sm:py-24" ref={ref}>
@@ -40,7 +40,10 @@ export function Stakes() {
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {stats.map((stat, index) => (
-            <Card key={index} className="text-center shadow-lg card-glow">
+            <Card key={index} className={cn(
+                "text-center shadow-lg card-glow animate-slide-in-stagger",
+                { 'is-in-view': isInView }
+            )} style={{ animationDelay: `${index * 150}ms` }}>
                 <CardHeader>
                     <CardTitle className="text-4xl font-extrabold text-primary">
                         {stat.value === 3 ? (

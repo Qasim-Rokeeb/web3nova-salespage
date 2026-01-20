@@ -1,4 +1,8 @@
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { useInView } from '@/hooks/use-in-view';
+import { cn } from '@/lib/utils';
 
 const authorityPoints = [
     '2 cohorts → 100% earners: Anu $1000 in bounties, Erudite hired by Graphite Network',
@@ -7,10 +11,11 @@ const authorityPoints = [
 ]
 
 export function Guide() {
+  const { ref, isInView } = useInView({ once: true, threshold: 0.3 });
   return (
-    <section id="guide" className="py-16 sm:py-24">
+    <section id="guide" className="py-16 sm:py-24" ref={ref}>
       <div className="container">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className={cn("mx-auto max-w-3xl text-center animate-slide-in-stagger", { 'is-in-view': isInView })}>
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
             Built by Engineers Who’ve Actually Cashed 5-Figure Bounties
           </h2>
@@ -19,7 +24,7 @@ export function Guide() {
           </p>
         </div>
 
-        <Card className="mx-auto mt-12 max-w-3xl card-glow">
+        <Card className={cn("mx-auto mt-12 max-w-3xl card-glow animate-slide-in-stagger", { 'is-in-view': isInView })} style={{ animationDelay: '150ms' }}>
             <CardHeader>
                 <CardTitle>Authority</CardTitle>
             </CardHeader>

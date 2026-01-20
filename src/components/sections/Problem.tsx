@@ -1,13 +1,18 @@
+'use client';
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useInView } from '@/hooks/use-in-view';
+import { cn } from '@/lib/utils';
 
 export function Problem() {
     const problemImage = PlaceHolderImages.find((img) => img.id === 'problem-illustration');
+    const { ref, isInView } = useInView({ once: true, threshold: 0.3 });
   return (
-    <section id="problem" className="py-16 sm:py-24">
+    <section id="problem" className="py-16 sm:py-24" ref={ref}>
       <div className="container">
         <div className="grid items-center gap-12 md:grid-cols-2">
-            <div>
+            <div className={cn("animate-slide-in-stagger", { 'is-in-view': isInView })}>
                 <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     YouTube Tutorials Won’t Pay Your Rent
                 </h2>
@@ -16,7 +21,7 @@ export function Problem() {
                 </p>
             </div>
             {problemImage && (
-                <div className="rounded-lg shadow-lg">
+                <div className={cn("rounded-lg shadow-lg animate-slide-in-stagger", { 'is-in-view': isInView })} style={{ animationDelay: '150ms' }}>
                     <Image
                         src={problemImage.imageUrl}
                         alt={problemImage.description}

@@ -1,4 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+'use client';
+
+import { Card } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import {
   Tooltip,
@@ -6,6 +8,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { useInView } from '@/hooks/use-in-view';
+import { cn } from '@/lib/utils';
 
 const comparisonData = [
   {
@@ -29,10 +33,11 @@ const comparisonData = [
 ];
 
 export function Pricing() {
+  const { ref, isInView } = useInView({ once: true, threshold: 0.3 });
   return (
-    <section id="pricing" className="py-16 sm:py-24">
+    <section id="pricing" className="py-16 sm:py-24" ref={ref}>
         <div className="container">
-            <div className="mx-auto max-w-2xl text-center">
+            <div className={cn("mx-auto max-w-2xl text-center animate-slide-in-stagger", { 'is-in-view': isInView })}>
                 <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl h2-underline">
                     A Computer-Science Degree Costs ₦2 Million and 4 Years
                 </h2>
@@ -40,7 +45,7 @@ export function Pricing() {
                     Web3Nova is ₦100 k, 90 days, and you get paid before it ends <span className="font-bold">(if you put in the work)</span>.
                 </p>
             </div>
-            <Card className="mt-12 card-glow">
+            <Card className={cn("mt-12 card-glow animate-slide-in-stagger", { 'is-in-view': isInView })} style={{ animationDelay: '150ms' }}>
                 <Table>
                     <TableHeader>
                         <TableRow>

@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/use-in-view";
 
 const logos = [
   "logo-base", "logo-sui", "logo-kaia"
@@ -8,12 +11,16 @@ const logos = [
 
 export function SocialProof() {
   const allLogos = [...logos, ...logos]; // Duplicate logos for seamless scroll
+  const { ref, isInView } = useInView({ once: true, threshold: 0.3 });
 
   return (
-    <section id="social-proof" className="section-gradient py-16 sm:py-24">
+    <section id="social-proof" className="section-gradient py-16 sm:py-24" ref={ref}>
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">
+          <h2 className={cn(
+              "text-sm font-semibold uppercase text-muted-foreground tracking-wider animate-slide-in-stagger",
+              { 'is-in-view': isInView }
+            )}>
             OUR GRADS HAVE BUILT ON AND GOTTEN PAID BY
           </h2>
           <div
