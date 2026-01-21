@@ -53,19 +53,18 @@ export function Header() {
 
   const getLinkClass = (href: string) => {
     return cn(
-        'relative text-sm font-medium text-muted-foreground transition-colors hover:text-primary',
-        'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-accent after:transition-transform after:duration-300 after:ease-out after:scale-x-0',
+        'rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground',
         {
-            'text-primary after:scale-x-100': `#${activeSection}` === href,
+            'bg-accent text-accent-foreground': `#${activeSection}` === href,
         }
     )
   }
 
   const getMobileLinkClass = (href: string) => {
     return cn(
-        "text-lg font-medium text-foreground transition-colors hover:text-primary",
+        "block w-full rounded-md px-3 py-2 text-lg font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground",
         {
-            'text-primary': `#${activeSection}` === href,
+            'bg-accent text-accent-foreground': `#${activeSection}` === href,
         }
     )
   }
