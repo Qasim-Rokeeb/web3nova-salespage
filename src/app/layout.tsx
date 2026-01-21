@@ -5,7 +5,6 @@ import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Script from 'next/script';
-import { MouseFollower } from '@/components/mouse-follower';
 
 export const metadata: Metadata = {
   title: 'web3kings – Become a Paid Web3 Builder in 90 Days',
@@ -54,7 +53,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <MouseFollower />
           {children}
           <Toaster />
         </ThemeProvider>
