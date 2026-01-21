@@ -4,26 +4,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 260 100% 60%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 180 100% 40%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 84.2% 60.2%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 260 100% 70%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 91.4%;
-    --input: 0 0% 91.4%;
-    --ring: 260 100% 60%;
-    --radius: 0.5rem;
+    --border: 217 33% 27%;
+    --input: 217 33% 27%;
+    --ring: 260 100% 70%;
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -46,7 +46,7 @@
     --border: 217 33% 27%;
     --input: 217 33% 27%;
     --ring: 260 100% 70%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 
   * {
@@ -76,11 +76,11 @@
 
   .h2-underline::after {
     content: '';
-    @apply absolute bottom-0 left-0 h-[2px] w-1/4 bg-gradient-to-r from-primary to-accent transition-all duration-500 ease-out;
+    @apply absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-gradient-to-r from-primary to-accent transition-transform duration-500 ease-out;
   }
 
   .h2-underline:hover::after {
-    @apply w-full;
+    @apply scale-x-100;
   }
 
   .plan-circle {
@@ -125,6 +125,15 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes gradient-bg {
+    '0%, 100%' {
+      background-position: 0% 50%;
+    }
+    '50%' {
+      background-position: 100% 50%;
     }
   }
 
