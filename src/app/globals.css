@@ -121,6 +121,10 @@
     @apply animate-gradient-bg;
   }
 
+  .mouse-follower {
+    @apply pointer-events-none fixed left-0 top-0 z-30 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-radial from-primary/20 via-primary/5 to-transparent opacity-50 blur-3xl transition-transform duration-200 ease-out;
+  }
+
   @keyframes slide-in {
     to {
       opacity: 1;
