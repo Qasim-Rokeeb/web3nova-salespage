@@ -23,15 +23,15 @@ export function Footer() {
               <Link href="#" aria-label="Discord">
                 <Disc className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
-              <Link href="mailto:support@web3nova.com" aria-label="Email Support">
-                 <span className="text-sm text-muted-foreground transition-colors hover:text-primary">support@web3nova.com</span>
+              <Link href="mailto:support@web3kings.com" aria-label="Email Support">
+                 <span className="text-sm text-muted-foreground transition-colors hover:text-primary">support@web3kings.com</span>
               </Link>
             </div>
           </div>
         </div>
         <Separator className="my-8" />
         <div className="flex flex-col items-center justify-center gap-4 text-sm text-muted-foreground md:flex-row">
-          <p className='font-bold'>&copy; 2025 Web3Nova. Turning Web2 skills into on-chain income.</p>
+          <p className='font-bold'>&copy; 2025 web3kings. Turning Web2 skills into on-chain income.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:text-primary">Privacy Policy</Link>
             <Link href="#" className="hover:text-primary">Terms of Service</Link>

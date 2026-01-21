@@ -22,7 +22,7 @@ const stats = [
         value: 3,
         prefix: "",
         suffix: "x",
-        label: "Average Web3Nova grad earns 3× tuition within 3 months"
+        label: "Average web3kings grad earns 3× tuition within 3 months"
     }
 ];
 

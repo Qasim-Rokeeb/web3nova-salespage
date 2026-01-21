@@ -7,10 +7,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Web3Nova – Become a Paid Web3 Builder in 90 Days',
+  title: 'web3kings – Become a Paid Web3 Builder in 90 Days',
   description: 'Web2 dev? Earn your first 200-1000 USDC on Base, Celo, Solana or Lisk in 90 days. Cohort starts Oct 6—only 100 seats.',
   openGraph: {
-    title: 'From Web2 to Web3 Income in 90 Days – Web3Nova',
+    title: 'From Web2 to Web3 Income in 90 Days – web3kings',
     description: 'Secure your seat for ₦100 k. Graduate with audited dApp and first bounty paid.',
   }
 };

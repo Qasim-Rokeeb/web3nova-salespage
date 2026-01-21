@@ -27,7 +27,7 @@ const testimonials = [
   {
     name: "@Anu",
     avatarId: "avatar-1",
-    quote: "Woke up to win $1000 hackathon prize on DreamSpace, thanks to Web3Nova.",
+    quote: "Woke up to win $1000 hackathon prize on DreamSpace, thanks to web3kings.",
     alt: "Testimonial from @Anu who won a $1000 hackathon prize."
   },
 ]

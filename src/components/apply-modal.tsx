@@ -103,7 +103,7 @@ export function ApplyModal({
       key: paystackKey,
       email: formData.email,
       amount: 100000 * 100, // Amount in kobo
-      ref: `W3N-${'' + Math.floor((Math.random() * 1000000000) + 1)}`,
+      ref: `W3K-${'' + Math.floor((Math.random() * 1000000000) + 1)}`,
       onClose: () => {
         setIsSubmitting(false);
       },
@@ -147,7 +147,7 @@ export function ApplyModal({
           <>
             <DialogHeader>
               <DialogTitle className="font-headline text-2xl">
-                Apply to Web3Nova
+                Apply to web3kings
               </DialogTitle>
               <DialogDescription>
                 Fill out the form below to start your journey. Spots are limited!
@@ -264,7 +264,7 @@ export function ApplyModal({
                 You&apos;re In!
               </DialogTitle>
               <DialogDescription>
-                Congratulations! You&apos;ve successfully enrolled in the Web3Nova cohort. We&apos;ve sent a confirmation email with all the details.
+                Congratulations! You&apos;ve successfully enrolled in the web3kings cohort. We&apos;ve sent a confirmation email with all the details.
               </DialogDescription>
             </DialogHeader>
             <Button onClick={() => handleModalClose(false)} className="w-full">

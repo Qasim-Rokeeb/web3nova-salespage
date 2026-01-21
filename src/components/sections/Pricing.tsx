@@ -25,7 +25,7 @@ const comparisonData = [
     firstPaycheck: 'Maybe',
   },
   {
-    name: 'Web3Nova',
+    name: 'web3kings',
     cost: '₦100 k',
     duration: '90 days',
     firstPaycheck: '200 – 1 000 USDC',
@@ -42,7 +42,7 @@ export function Pricing() {
                     A Computer-Science Degree Costs ₦2 Million and 4 Years
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-prose mx-auto">
-                    Web3Nova is ₦100 k, 90 days, and you get paid before it ends <span className="font-bold">(if you put in the work)</span>.
+                    web3kings is ₦100 k, 90 days, and you get paid before it ends <span className="font-bold">(if you put in the work)</span>.
                 </p>
             </div>
             <Card className={cn("mt-12 card-glow animate-slide-in-stagger", { 'is-in-view': isInView })} style={{ animationDelay: '150ms' }}>
@@ -57,10 +57,10 @@ export function Pricing() {
                     </TableHeader>
                     <TableBody>
                         {comparisonData.map((item) => (
-                            <TableRow key={item.name} className={item.name === 'Web3Nova' ? 'bg-primary/10 font-bold' : ''}>
+                            <TableRow key={item.name} className={item.name === 'web3kings' ? 'bg-primary/10 font-bold' : ''}>
                                 <TableCell>{item.name}</TableCell>
                                 <TableCell>
-                                    {item.name === 'Web3Nova' ? (
+                                    {item.name === 'web3kings' ? (
                                         <TooltipProvider>
                                             <Tooltip>
                                                 <TooltipTrigger asChild>

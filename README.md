@@ -1,5 +1,5 @@
-## Webnova Sales Page
-Welcome to Web3Nova, your launchpad into the exciting world of Web3 development!
+## web3kings Sales Page
+Welcome to web3kings, your launchpad into the exciting world of Web3 development!
 
 We are a community dedicated to training individuals like you to become proficient Web3 developers and unlock earning opportunities within this burgeoning ecosystem.
 
@@ -12,11 +12,11 @@ We are a community dedicated to training individuals like you to become proficie
 
 ## Get Started
 
-Whether you're a complete beginner or have some coding experience, Web3Nova is the place to accelerate your Web3 journey.
+Whether you're a complete beginner or have some coding experience, web3kings is the place to accelerate your Web3 journey.
 
 1.  **Join our Discord Server:** Connect with the community and stay updated on our latest programs and events.
 2.  **Explore our Curriculum:** Discover the learning paths that align with your interests and goals.
 3.  **Start Building:** Dive into our projects and put your skills to the test.
 
-Join Web3Nova and become part of the future of the internet!
+Join web3kings and become part of the future of the internet!
 ke a look at src/app/page.tsx.
