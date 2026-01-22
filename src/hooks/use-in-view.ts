@@ -36,7 +36,9 @@ export function useInView({ threshold = 0.1, once = true }: UseInViewOptions = {
     observer.observe(currentRef);
 
     return () => {
-      observer.unobserve(currentRef);
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
     };
   }, [once, threshold]);
 
