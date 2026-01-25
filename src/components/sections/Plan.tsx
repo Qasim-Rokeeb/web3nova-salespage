@@ -14,18 +14,20 @@ const planModules = [
   {
     step: '1',
     title: 'Apply & Pay ₦100k',
-    content: 'Skin in the game; acceptance within 48 h.',
+    content:
+      "Commit to your growth. We review applications quickly to get you started on your journey. Your investment ensures you're serious about becoming a top-tier Web3 developer.",
   },
   {
     step: '2',
     title: 'Build & Earn (10 h/week)',
-    content: 'Live mentor calls, cohort grind, portfolio dApp, chase bounties.',
+    content:
+      "This is where the magic happens. You'll join live sessions with seasoned mentors, collaborate with your cohort on challenging projects, build a dApp for your portfolio, and start hunting for real-world bounties to earn while you learn.",
   },
   {
     step: '3',
     title: 'Graduate & Monetize',
     content:
-      'Leave with audited contract, first 200 – 1 000 USDC earned, job-ready GitHub.',
+      'You’ll graduate with a professionally audited smart contract, your first on-chain earnings between 200 to 1,000 USDC, and a polished GitHub profile that will impress any recruiter in the Web3 space.',
   },
 ];
 
